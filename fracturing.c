@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#define pi 3.14159
+#define PI 3.14159
 
 // Funtion for distance
 // Includes questions and input
@@ -35,16 +35,16 @@ double calculateDistance(){
 // Function for finding perimeter
 // Uses distance function
 double calculatePerimeter(){
-    double perimeter = pi * calculateDistance();
-    printf("The perimeter of the City encompassed by your request is %lf \n \n", perimeter);
+    double perimeter = PI * calculateDistance();
+    printf("The perimeter of the city encompassed by your request is %lf \n \n", perimeter);
     return 2.0;
 }
 // Function for finding area
 // Uses distance function
 double calulateArea(){
     double distance = calculateDistance();
-    double area = (pi * pow(distance/2,2));
-    printf("The area of the City encompassed by your request is %lf\n \n",area);
+    double area = (PI * pow(distance/2,2));
+    printf("The area of the city encompassed by your request is %lf\n \n",area);
     return 2.0;
 }
 
@@ -52,7 +52,7 @@ double calulateArea(){
 // Calls calculateDistance
 double calculateWidth(){
     double width = calculateDistance();
-    printf("The width of your city is %lf \n", width);
+    printf("The width of the city encompassed by your request is %lf \n", width);
     return 1.0;
 }
 
@@ -60,7 +60,7 @@ double calculateWidth(){
 // Calls calculateDistance
 double calculateHeight(){
     double height = calculateDistance();
-    printf("The height of your city is %lf \n \n", height);
+    printf("The height of the city encompassed by your request is %lf \n \n", height);
     return 1.0;
 }
 
