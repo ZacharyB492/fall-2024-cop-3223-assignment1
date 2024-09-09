@@ -2,10 +2,8 @@
 #include <math.h>
 #define pi 3.14159
 
-double askForUserInput(){
-    
-} 
-
+// Funtion for distance
+// Includes questions and input
 double calculateDistance(){
     int x1 = 0;
     int y1 = 0;
@@ -34,13 +32,15 @@ double calculateDistance(){
     return distance;
 }
 
-
+// Function for finding perimeter
+// Uses distance function
 double calculatePerimeter(){
     double perimeter = pi * calculateDistance();
     printf("The perimeter of the City encompassed by your request is %lf \n \n", perimeter);
     return 2.0;
 }
-
+// Function for finding area
+// Uses distance function
 double calulateArea(){
     double distance = calculateDistance();
     double area = (pi * pow(distance/2,2));
@@ -48,12 +48,16 @@ double calulateArea(){
     return 2.0;
 }
 
+// Function for width
+// Calls calculateDistance
 double calculateWidth(){
     double width = calculateDistance();
     printf("The width of your city is %lf \n", width);
     return 1.0;
 }
 
+// Function for height
+// Calls calculateDistance
 double calculateHeight(){
     double height = calculateDistance();
     printf("The height of your city is %lf \n \n", height);
