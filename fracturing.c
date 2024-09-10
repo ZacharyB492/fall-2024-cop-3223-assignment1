@@ -41,7 +41,7 @@ double calculatePerimeter() {
 }
 // Function for finding area
 // Uses distance function
-double calulateArea() {
+double calculateArea() {
     double distance = calculateDistance();
     double area = (PI * pow(distance/2,2));
     printf("The area of the city encompassed by your request is %.3lf\n \n",area);
@@ -72,7 +72,7 @@ double calculateHeight() {
 int main(int argc, char **argv) {
     calculateDistance();
     calculatePerimeter();
-    calulateArea();
+    calculateArea();
     calculateWidth();
     calculateHeight();
     return 0;
